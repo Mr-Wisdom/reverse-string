@@ -1,6 +1,14 @@
+
+
 function reverseString(str) {
-  // type your code here
+  let reversedString = ""
+  for (const char of str) {
+    reversedString = char + reversedString;
+  }
+  return reversedString
 }
+
+console.log(reverseString("meow"))
 
 if (require.main === module) {
   // add your own tests in here
@@ -16,4 +24,5 @@ if (require.main === module) {
 module.exports = reverseString;
 
 // Please add your pseudocode to this file
+// w
 // And a written explanation of your solution
